@@ -8,7 +8,7 @@ jobs:
   backup:
     runs-on: ubuntu-latest
     steps:
-      - uses: lfdm/firestore-backup-gh-action@v1.0.0
+      - uses: lfdm/firestore-backup-gh-action@master
         with:
           gcloudAuth: ${{ secrets.FIREBASE_BACKUP_GCLOUD_AUTH }}
           projectId: ${{ secrets.gcloud_project_id }}
